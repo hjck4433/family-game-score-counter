@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+.counter {
+  width: 40%;
+  float: left;
+  margin-left: 10%;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin: 80px 0;
+}
+
+#pNum {
+  width: 80%;
+  height: 30px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+#pNum label {
+  vertical-align: middle;
+}
+
+#pNum input {
+  width: 50px;
+  height: 30px;
+  margin: 0 15px 0 10px;
+  text-align: center;
+  box-sizing: border-box;
+
+}
+#pNum #btnOk{
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+#pNum #btnOk:hover {
+  background-color: goldenrod;
+}
+
+.pList {
+  width: 80%;
+  max-height: 300px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  overflow: auto;
+}
+.pList .player {
+  margin-bottom: 20px;
+}
+
+.player input {
+  display: inline-block;
+  width: 110px;
+  height: 30px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.player .current {
+  display:inline-block;
+  font-size: 18px;
+}
+.player .current span {
+  font-weight: bold;
+}
+
+.btns {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.btns span {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.btns span:hover {
+  background-color: goldenrod;
+}
+
+.record {
+  width: 80%;
+  margin: 0 auto;
+}
+.record h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.record .pRecord{
+  height: 220px;
+  padding: 15px 30px;
+  border: 1px solid;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.pRecord li {
+  display: inline-block;
+  line-height: 1.6;
+  margin-bottom: 5px;
+}
+.pRecord li span {
+  display: block;
+  font-weight: 100;
+  padding: 0 5px;
+  border-bottom: 2px solid #ddd;
+  width: 50px;
+  text-align: center;
+}
+.pRecord li span.hName {
+  font-weight: bold;
+  border-bottom-color: #000;
+  width: 50px;
+}
+.pRecord li span:last-child {
+  border-bottom: none;
+}
+
+.month {
+  width: 30%;
+  float: left;
+  margin-top: 100px;
+  margin-left: 5%;
+}
+.month li {
+  width: 40%;
+  float: left;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 5%;
+}
+.month li img {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+@media all and (max-width: 600px) {
+  .counter {
+    float: none;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 80px;
+  }
+  .pList input{
+    font-size: 10px;
+    width: 80px;
+  }
+  .pList .current {
+    font-size: 14px;
+  }
+  .pRecord span {
+    width: 40px !important;
+  }
+
+  .month {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+  .month li {
+    width: 40%;
+    margin-right: 5%;
+  }
+}

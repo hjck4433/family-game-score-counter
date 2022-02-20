@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Game Score Counter</title>
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+  <script src="./js/jquery-1.12.4.min.js"></script>
+  <script src="./js/jquery-ui.min.js"></script>
+  <script src="./js/main.js"></script>
+</head>
+<body>
+  <!-- <h1>고스톱 점수 카운터</h1> -->
+  <div class="counter">
+    <h1>고스톱 점수 카운터</h1>
+
+    <div id="pNum">
+      <label>
+        플레이하는 인원 수
+        <input type="number" class="pAmount">
+      </label>
+      <span id="btnOk">확인</span>
+    </div>
+     <!-- //.pNum-->
+
+    <ul class="pList">
+      <li class="player">
+        <input type="text" class="pName" placeholder="이름을 넣으세요">
+        <input type="number" class="pScore" placeholder="점수를 넣으세요">
+        <div class="current">
+          현재 <span class="score">0</span> 점
+          <span class="rank"></span> 등
+        </div>
+      </li>
+    </ul>
+    <!-- //.pList -->
+
+    <div class="btns">
+      <span id="calS">계산</span>
+      <span id="reset">리셋</span>
+    </div>
+
+    <!-- //.btns -->
+
+    <div class="record">
+      <h2>역대 점수 기록</h2>
+      <ul class="pRecord">
+        <!-- <li>
+          <span class="hName">현준 - </span><span>2</span><span>3</span><span>4</span>
+        </li>
+        <li>
+          <span class="hName">현지 -</span><span>2</span><span>3</span><span>4</span>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+  <!-- //.counter -->
+
+  <div class="month">
+    <ul>
+      <li>1월<img src="./img/month_01.png" alt="1월"></li>
+      <li>2월<img src="./img/month_02.png" alt="2월"></li>
+      <li>3월<img src="./img/month_03.png" alt="3월"></li>
+      <li>4월<img src="./img/month_04.png" alt="4월"></li>
+      <li>5월<img src="./img/month_05.png" alt="5월"></li>
+      <li>6월<img src="./img/month_06.png" alt="6월"></li>
+      <li>7월<img src="./img/month_07.png" alt="7월"></li>
+      <li>8월<img src="./img/month_08.png" alt="8월"></li>
+      <li>9월<img src="./img/month_09.png" alt="9월"></li>
+      <li>10월<img src="./img/month_10.png" alt="10월"></li>
+      <li>11월<img src="./img/month_11.png" alt="11월"></li>
+      <li>12월<img src="./img/month_12.png" alt="12월"></li>
+    </ul>
+  </div>
+  <!-- //.month -->
+</body>
+</html>
